@@ -16,7 +16,7 @@ var jump = function(nums) {
         jumps++;
         currentEndIndex = currentFastestIndex
         }
-        if(currentEndIndex >= n-1){
+            if(currentEndIndex >= n-1){
             break
             
         }
