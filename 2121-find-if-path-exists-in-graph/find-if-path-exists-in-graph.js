@@ -24,9 +24,7 @@ var validPath = function(n, edges, source, destination) {
         visited.add(node);
 
         for(const neighbor of graph.get(node) || []){
-            if(!visited.has(neighbor)){
-                if(dfs(neighbor)) return true;
-            }
+            if(!visited.has(neighbor) && dfs(neighbor)) return true;
         }
         return false;
     }
