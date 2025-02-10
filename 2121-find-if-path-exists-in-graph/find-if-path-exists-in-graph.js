@@ -7,6 +7,8 @@
  */
 var validPath = function(n, edges, source, destination) {
 
+    if(source === destination) return true
+
     const graph = new Map();
     for(const [a,b] of edges){
         if(!graph.has(a)) graph.set(a,[]);
